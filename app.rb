@@ -6,6 +6,7 @@ class App < Sinatra::Base
   end
   
   get '/square/:number' do
+<<<<<<< HEAD
     number = params[:number].to_i 
     (number * number).to_s
   end
@@ -38,5 +39,9 @@ class App < Sinatra::Base
       answer = "Unable to perform this operation"
     end
     answer.to_s
+=======
+    number = params[:number]
+    number * number
+>>>>>>> 705b7737e142ebcfbf0d05da1f21e3e19ea0fd1c
   end
 end
